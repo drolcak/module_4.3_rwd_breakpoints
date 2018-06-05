@@ -42,28 +42,34 @@ div, footer {
 /* ---------------------HEADER---------------------*/
 
 .nav {
-    max-height: 20vh;
+    height: 60px;
     display: inline-block;
     width: 100%;
 }
 
 .nav ul li a {
-    padding: 1vh 12vh;
+    padding: 0 20vh;
     text-transform: uppercase;
+    line-height: 60px;
 }
 
-.nav a {
-    float: left;
-}
+/*.nav a {*/
+    /*!*float: left;*!*/
+/*!*}*!*/
 
 .nav img {
     padding: 0 18vh;
 }
-.nav li {
+.nav ul li {
    float: right;
     list-style: none;
 }
 
+.nav ul {
+    padding: 0;
+    margin: 0;
+    float: right
+}
 /* ---------------------HERO---------------------*/
 
 .container .hero {
