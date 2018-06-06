@@ -33,13 +33,36 @@ div, footer {
 }
 
 
-@media (max-width: 1200px){
- .container {
-     width: 100%;
- }
+/*@media (max-width: 1200px){*/
+    /*.container {*/
+     /*width: 100%;*/
+ /*}*/
+/*}*/
+
+/*@media (min-width: 768px) and (max-width: 1199px) {*/
+
+/*}*/
+
+@media (max-width: 767px) {
+    .nav {
+        max-height: 200px;
+        display: block;
+        width: 100%;
+    }
+
+    .nav a {
+        float: none;
+        width: 100%;
+        background-color: blue;
+    }
+
+    .nav ul li a {
+        padding: 0;
+        color: #fff;
+    }
 }
 
-/* ---------------------HEADER---------------------*/
+    /* ---------------------HEADER---------------------*/
 
 .nav {
     height: 60px;
@@ -51,6 +74,13 @@ div, footer {
     padding: 0 10vh;
     text-transform: uppercase;
     line-height: 60px;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav ul li a:hover {
+    background-color: #c8d6e5;
+    color: #fff;
 }
 
 .nav a {
@@ -99,6 +129,19 @@ div, footer {
 .gallery a {
     display: flex;
     justify-content: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---------------------GALLERY---------------------*/
+
+footer {
+    background-color: #000;
+    color: #ffffff;
+    text-align: center;
 }
 
 
