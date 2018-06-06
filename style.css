@@ -43,24 +43,9 @@ div, footer {
 
 /*}*/
 
-@media (max-width: 767px) {
-    .nav {
-        max-height: 200px;
-        display: block;
-        width: 100%;
-    }
-
-    .nav a {
-        float: none;
-        width: 100%;
-        background-color: blue;
-    }
-
-    .nav ul li a {
-        padding: 0;
-        color: #fff;
-    }
-}
+/*@media (max-width: 767px) {*/
+    /**/
+/*}*/
 
     /* ---------------------HEADER---------------------*/
 
