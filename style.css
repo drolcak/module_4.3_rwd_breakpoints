@@ -25,16 +25,15 @@ body {
     float: left;
     min-height: 1px;
     padding: 0 15px;
-    border: 3px black solid;
 }
 
 div, footer {
-    border: 1px solid black;
+    padding: 1px 1px;
 }
 
+/* ---------------------RWD---------------------*/
 
-@media (max-width: 1200px){
-
+@media (max-width: 767px) {
     .container {
         width: 96%;
         margin: 0 2%;
@@ -48,8 +47,8 @@ div, footer {
         float: none;
         width: 100%;
         text-align: center;
-        background-color: orange;
     }
+
     .nav > a > img { /* zapytać się dlaczego nie działa .nav img w max-widht skoro bez tego dziala*/
         float: none;
     }
@@ -66,8 +65,40 @@ div, footer {
     .gallery {
         flex-direction: column;
     }
-    .gallery a {
+    
+    .container > .gallery > .col-4 { /*tu też nie działa bez selektora >*/
         width: 100%;
+        margin-bottom: 2px;
+    }
+
+    .google-map-static >.container > img  {
+        margin-top: -2px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .container {
+        width: 96%;
+        margin: 0 2%;
+    }
+
+    header > .container > .nav {
+        height: 100%;
+    }
+
+    .nav a {
+        text-align: center;
+    }
+
+    .nav > a > img {
+        float: left;
+        padding: 0 4vh;
+    }
+
+    .hero {
+        margin-top: 1vh;
     }
 
     .google-map-static >.container > img  {
@@ -76,20 +107,13 @@ div, footer {
     }
 }
 
-/*@media (min-width: 768px) and (max-width: 1199px) {*/
-
-/*}*/
-
-/*@media (max-width: 767px) {*/
-
-/*}*/
-
     /* ---------------------HEADER---------------------*/
 
 .nav {
     height: 60px;
     display: inline-block;
     width: 100%;
+    background-color: #ffeaa7;
 }
 
 .nav ul li a {
@@ -115,7 +139,7 @@ div, footer {
 }
 
 .nav ul li {
-   float: right;
+   float: left;
     list-style: none;
 }
 
@@ -131,6 +155,7 @@ div, footer {
     min-height: 40vh;
     max-height: 100vh;
     position: relative;
+    background-color: #0984e3;
 }
 
 .container .hero h1 {
@@ -146,11 +171,14 @@ div, footer {
 
 .gallery {
     display: flex;
+    justify-content: space-around;
 }
 
-.gallery a {
+.gallery .col-4 {
     display: flex;
+    background-color: #b2bec3;
     justify-content: center;
+    width: 33%;
 }
 
 .gallery img {
@@ -158,7 +186,7 @@ div, footer {
     height: auto;
 }
 
-/* ---------------------GALLERY---------------------*/
+/* ---------------------FOOTER---------------------*/
 
 footer {
     background-color: #000;
@@ -166,8 +194,12 @@ footer {
     text-align: center;
 }
 
+/* ---------------------MAP---------------------*/
 
-
+.google-map-static img {
+    width: 100%;
+    height: 100%;
+}
 
 /* -------------------------GRID -------------------------*/
 /* -------------------------columns-------------------------*/
