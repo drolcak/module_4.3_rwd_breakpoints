@@ -93,7 +93,7 @@ div, footer {
 
     .nav > a > img {
         float: left;
-        padding: 0 4vh;
+        padding: 0 2vh;
     }
 
     .hero {
@@ -133,7 +133,7 @@ div, footer {
 }
 
 .nav img {
-    padding: 0 18vh;
+    /*padding: 0 auto;*/
     float: right;
 }
 
